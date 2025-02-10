@@ -14,7 +14,7 @@ export default async function IntegrationPage() {
 
       <Box sx={{ flexGrow: 1, marginBlock: 3 }}>
         <Link
-          href="https://auth.mercadolibre.com.uy/authorization?response_type=code&client_id=3844293861730465&redirect_uri=https://next-js-concept.vercel.app/callback"
+          href="https://auth.mercadolibre.com.uy/authorization?response_type=code&client_id=3844293861730465&redirect_uri=https://next-js-concept1.vercel.app/callback"
           target="_blank"
           rel="noopener noreferrer"
         >
