@@ -6,6 +6,9 @@ import Link from "next/link";
 import LinkIcon from "@mui/icons-material/Link";
 
 export default async function IntegrationPage() {
+  const redirectUri =
+    process.env.NEXT_PUBLIC_MELI_REDIRECT_URI || "/default-url";
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Typography marginBlock={2}>
@@ -13,11 +16,7 @@ export default async function IntegrationPage() {
       </Typography>
 
       <Box sx={{ flexGrow: 1, marginBlock: 3 }}>
-        <Link
-          href="https://auth.mercadolibre.com.uy/authorization?response_type=code&client_id=3844293861730465&redirect_uri=https://next-js-concept1.vercel.app/callback"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href={redirectUri} target="_blank" rel="noopener noreferrer">
           <Button variant="contained" startIcon={<LinkIcon />}>
             Mercado Libre
           </Button>
